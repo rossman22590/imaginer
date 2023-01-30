@@ -13,5 +13,8 @@ RUN npm ci
 # Copy the rest of the files to the container
 COPY . .
 
+# Expose port 3000
+EXPOSE 3000
+
 # Specify the command to run when the container starts
 CMD [ "npm", "run", "dev" ]
