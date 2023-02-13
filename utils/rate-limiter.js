@@ -14,7 +14,7 @@ const getIP = (request) =>
   request.connection.remoteAddress;
 
 export const getRateLimitMiddlewares = () => {
-  const max = 3;
+  const max = 100;
   const windowMs = 12 * 60 * 60 * 1000;
   const keyGenerator = getIP;
 
